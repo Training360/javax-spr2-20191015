@@ -23,4 +23,6 @@ public class EmployeeHistoryDto {
     private String type;
 
     private int revNumber;
+
+    private String username;
 }

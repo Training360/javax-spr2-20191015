@@ -38,7 +38,8 @@ public class EmployeeRespositoryImpl implements EmployeeRepositoryCustom {
         var modelMapper = new ModelMapper();
         var employee = (Employee) resultItem[0];
         var dto =  modelMapper.map(employee, EmployeeHistoryDto.class);
-        var revision = (DefaultRevisionEntity) resultItem[1];
+       // var revision = (DefaultRevisionEntity) resultItem[1];
+        var revision = (EmployeeRevisionEntity) resultItem[1];
         dto.setRevNumber(revision.getId());
         dto.setModifiedAt(LocalDateTime.ofInstant(revision.getRevisionDate().toInstant(),
                 ZoneId.systemDefault()));

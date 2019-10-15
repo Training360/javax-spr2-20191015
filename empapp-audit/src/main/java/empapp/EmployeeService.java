@@ -57,6 +57,6 @@ public class EmployeeService {
     }
 
     public List<EmployeeHistoryDto> findEmployeeHistoryById(long id) {
-
+        return employeeRepository.findEmployeeHistoryById(id);
     }
 }

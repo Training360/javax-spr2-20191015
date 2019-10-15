@@ -9,12 +9,6 @@ import org.springframework.stereotype.Service;
 @Slf4j
 public class MailService {
 
-    private TaskExecutor executor;
-
-    public MailService(TaskExecutor executor) {
-        this.executor = executor;
-    }
-
     public void sendMail(String to) {
 //        executor.execute(() ->
 //        log.info("Send mail: " + to));

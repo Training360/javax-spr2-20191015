@@ -6,6 +6,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/employees")
+@CrossOrigin("http://training.com")
 public class EmployeeController {
 
     private EmployeeService employeeService;
